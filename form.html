@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="./form.html" method="POST">
+         <h1>Capturar metas a corto y mediano plazo</h1>
+         <label for="meta"> Meta: </label><br>
+         <input type="text" name="meta" id="meta-1" placeholder="Escribe tu meta" required><br><br>
+
+         <label for="descripcion">Descripcion: </label><br>
+         <textarea name="descripcion" placeholder="Escribe la descripcion de la meta" rows="4" cols="50"></textarea><br><br>
+        
+         <label for="plazo">Plazo:</label><br>
+         <select name="plazo" id="plazo">
+             <option>uno</option>
+             <option>tres</option>
+             <option> cinco</option>
+             <option> diez</option>
+         </select>
+         <br><br>
+
+         <label for="indispensable">Es indispensable:</label><br>
+         <input type="radio" name="indispensable" value="si"> Indispensable
+         <input type="radio" name="indispensable" value="no"> No puedo vivir sin ello
+         <br><br>
+
+         <label for="tiempo">Puedo realizarlo:</label><br>
+         <input type="checkbox" name="tiempo1" value="antes"> Antes de la carrera <br>
+         <input type="checkbox" name="tiempo2" value="durante"> Durante la carrera <br>
+         <input type="checkbox" name="tiempo3" value="despues"> Despues de la carrera <br>
+         <br> 
+        
+         <label for="fecha">Fecha:</label>
+         <input type="date" name="fecha">
+         <br><br>
+
+         <label for="edad">Edad:</label>
+         <input type="number" name="edad">
+         <br><br>
+
+          <input type="hidden" name="codigo" value="1234">
+          <br>
+
+          <label for="pass">Contraseña:</label>
+          <input type="password" name="pass">
+          <br><br>
+
+         <input type="submit" value="Crear meta">
+         <button type="submit">Enviar con button</button>
+        </form> 
+    </body>
+</html>
